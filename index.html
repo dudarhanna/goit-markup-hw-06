@@ -67,11 +67,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-          <button
-            class="btn-main btn-main-mode-blue"
-            type="button"
-            data-modal-open
-          >
+          <button class="btn-main" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -81,9 +77,58 @@
         <div class="modal">
           <button class="modal-close-btn" type="button" data-modal-close>
             <svg width="18" height="18">
-              <use href="./images/symbol-close.svg#icon-closeclose-black"></use>
+              <use href="./images/icons.svg#icon-closeclose-black"></use>
             </svg>
           </button>
+          <form class="sign-up-form">
+            <strong class="sign-up-text"
+              >Оставьте свои данные, мы вам перезвоним</strong
+            >
+            <label class="form">
+              <span class="text">Имя</span>
+              <input class="form-stroke" type="text" name="user-name" />
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </label>
+            <label class="form">
+              <span class="text">Телефон</span>
+              <input class="form-stroke" type="tel" name="user-tel" />
+              <svg width="13" height="13">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </label>
+            <label class="form">
+              <span class="text">Почта</span>
+              <input class="form-stroke" type="email" name="user-mail" />
+              <svg width="15" height="12">
+                <use href="./images/icons.svg#email-modal-form"></use>
+              </svg>
+            </label>
+            <label class="form">
+              <span class="text">Комментарий</span>
+              <textarea
+                class="form-stroke-comment"
+                name="user-comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+            <label class="form form-agreement">
+              <input type="checkbox" name="user-agreeement" />
+              <svg width="16" height="15">
+                <use href="./images/icons.svg#icon_check"></use>
+
+                <use href="./images/icons.svg#icon_empty"></use>
+              </svg>
+              <span
+                >Соглашаюсь с рассылкой и принимаю
+                <span>
+                  <a class="terms-agreement" href="">Условия договора</a></span
+                >
+              </span>
+            </label>
+            <button class="btn-modal" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
       <!-- Секція Benefits -->
@@ -443,6 +488,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-button">
+          <p class="section-footer tittle-small">
+            <strong>Подпишитесь на рассылку</strong>
+          </p>
+          <div class="footer-subscribe-section">
+            <label>
+              <input
+                class="footer-subscribe"
+                type="email"
+                name="user-mail"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="btn-footer" type="submit">
+              Подписаться<svg class="button-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon_send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
