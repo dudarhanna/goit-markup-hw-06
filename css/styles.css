@@ -168,7 +168,7 @@ img {
   cursor: pointer;
   transition: background-color var(--anim), color var(--anim);
 }
-/* .icon-empty {
+.icon-empty {
   opacity: 0;
 }
 .icon-check {
@@ -179,7 +179,7 @@ img {
 }
 .checkbox:focus:valid.modal-svg ~ .modal-svg .icon-empty {
   opacity: 1;
-} */
+}
 .text-agreement {
   user-select: none;
 }
