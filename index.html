@@ -86,22 +86,25 @@
             >
             <label class="form">
               <span class="text">Имя</span>
+
               <input class="form-stroke" type="text" name="user-name" />
-              <svg width="12" height="12">
+              <svg class="modal-form-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </label>
+
             <label class="form">
               <span class="text">Телефон</span>
               <input class="form-stroke" type="tel" name="user-tel" />
-              <svg width="13" height="13">
+              <svg class="modal-form-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
             </label>
+
             <label class="form">
               <span class="text">Почта</span>
               <input class="form-stroke" type="email" name="user-mail" />
-              <svg width="15" height="12">
+              <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#email-modal-form"></use>
               </svg>
             </label>
@@ -115,14 +118,20 @@
             </label>
             <label class="form form-agreement">
               <input type="checkbox" name="user-agreeement" />
-              <svg width="16" height="15">
-                <use href="./images/icons.svg#icon_check"></use>
 
-                <use href="./images/icons.svg#icon_empty"></use>
+              <!-- подвійне use -->
+              <svg class="modal-svg" width="16" height="15">
+                <use
+                  class="icon-check"
+                  href="./images/icons.svg#icon_check"
+                ></use>
+                <use
+                  class="icon-empty"
+                  href="./images/icons.svg#icon_empty"
+                ></use>
               </svg>
-              <span
-                >Соглашаюсь с рассылкой и принимаю
-                <span>
+              <span class="text-agreement"
+                >Соглашаюсь с рассылкой и принимаю<span>
                   <a class="terms-agreement" href="">Условия договора</a></span
                 >
               </span>

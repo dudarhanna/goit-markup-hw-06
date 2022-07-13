@@ -18,7 +18,7 @@
   --footer-bcg-cl: rgba(255, 255, 255, 0.1);
   --color-overlay: rgba(33, 150, 243, 0.9);
   --form-cl: rgba(33, 33, 33, 0.2);
-  --placeholder-cl:  rgba(117, 117, 117, 0.5)
+  --placeholder-cl: rgba(117, 117, 117, 0.5);
   /* Інши змінні */
   --indent: 30px;
   --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -112,11 +112,11 @@ img {
 }
 .form {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: baseline;
   margin-bottom: 10px;
   margin-left: 40px;
- 
 }
 .text {
   margin-bottom: 4px;
@@ -140,14 +140,12 @@ img {
   line-height: 1.16x;
   letter-spacing: 0.01em;
   color: var(--placeholder-cl);
-
 }
 .terms-agreement {
   color: var(--color-overlay);
-
 }
 .form-agreement {
-display: inline-block;
+  display: inline-block;
 }
 .btn-modal {
   padding: 10px 55px 10px 56px;
@@ -170,11 +168,26 @@ display: inline-block;
   cursor: pointer;
   transition: background-color var(--anim), color var(--anim);
 }
+/* .icon-empty {
+  opacity: 0;
+}
+.icon-check {
+  opacity: 0;
+}
+.checkbox:focus:invalid.modal-svg ~ .modal-svg .icon-check {
+  opacity: 1;
+}
+.checkbox:focus:valid.modal-svg ~ .modal-svg .icon-empty {
+  opacity: 1;
+} */
+.text-agreement {
+  user-select: none;
+}
+
 /* Ховер, фокус кнопки */
 .btn-modal:hover,
 .btn-modal:focus {
   background-color: var(--second-cl-btn-main);
-
 }
 /* Кнопка на головнвій */
 .btn-main {
@@ -573,21 +586,21 @@ display: inline-block;
 }
 .footer-subscribe {
   width: 358px;
-height: 50px;
-padding-left: 16px;
-padding-bottom: 15px;
-padding-top: 15px;
-font-size: 16px;
-line-height: 1.14;
+  height: 50px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 16px;
+  line-height: 1.14;
   background-color: var(--hero-footer-bg-cl);
   border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 .btn-footer {
   width: 200px;
   padding-left: 29px;
- 
+
   margin-left: 12px;
   border-radius: 4px;
   border: none;
@@ -609,9 +622,10 @@ border-radius: 4px;
 .btn-footer:focus {
   background-color: var(--second-cl-btn-main);
 }
+
 .button-send {
-fill: var(--white-cl);
-margin-left: 10px;
+  fill: var(--white-cl);
+  margin-left: 10px;
 }
 
 /* Сторінка Портфоліо */
