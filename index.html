@@ -80,62 +80,62 @@
               <use href="./images/icons.svg#icon-closeclose-black"></use>
             </svg>
           </button>
-          <form class="sign-up-form">
+          <form>
             <strong class="sign-up-text"
               >Оставьте свои данные, мы вам перезвоним</strong
             >
-            <label class="form">
-              <span class="text">Имя</span>
+            <div class="form">
+              <span class="agreement-text">Имя</span>
+              <label for="name" class="modal-text-label"></label>
+              <input class="form-stroke" type="text" name="name" id="name" />
 
-              <input class="form-stroke" type="text" name="user-name" />
               <svg class="modal-form-icon" width="12" height="12">
-                <use href="./images/icons.svg#icon-name"></use>
+                <use
+                  class="modal-form-icon"
+                  href="./images/icons.svg#icon-name"
+                ></use>
               </svg>
-            </label>
-
-            <label class="form">
-              <span class="text">Телефон</span>
-              <input class="form-stroke" type="tel" name="user-tel" />
+            </div>
+            <div class="form">
+              <span class="agreement-text">Телефон</span>
+              <label for="tel" class="modal-text-label"></label>
+              <input class="form-stroke" type="tel" name="user-tel id="tel"" />
               <svg class="modal-form-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
-            </label>
-
-            <label class="form">
-              <span class="text">Почта</span>
-              <input class="form-stroke" type="email" name="user-mail" />
-              <svg class="modal-form-icon" width="18" height="18">
+            </div>
+            <div class="form">
+              <span class="agreement-text">Почта</span>
+              <label for="email" class="modal-text-label"></label>
+              <input
+                class="form-stroke"
+                type="email"
+                name="user-mail"
+                id="email"
+                placeholder=" "
+              />
+              <svg class="modal-form-icon" width="15" height="12">
                 <use href="./images/icons.svg#email-modal-form"></use>
               </svg>
-            </label>
-            <label class="form">
-              <span class="text">Комментарий</span>
+            </div>
+            <div class="form-agreement">
+              <span class="agreement-text">Комментарий</span>
+              <label for="user-comment" class="modal-text-label"></label>
               <textarea
                 class="form-stroke-comment"
                 name="user-comment"
                 placeholder="Введите текст"
               ></textarea>
-            </label>
-            <label class="form form-agreement">
-              <input type="checkbox" name="user-agreeement" />
-
-              <!-- подвійне use -->
-              <svg class="modal-svg" width="16" height="15">
-                <use
-                  class="icon-check"
-                  href="./images/icons.svg#icon_check"
-                ></use>
-                <use
-                  class="icon-empty"
-                  href="./images/icons.svg#icon_empty"
-                ></use>
-              </svg>
-              <span class="text-agreement"
+            </div>
+            <!-- Agreement -->
+            <label class="label-agreement"> 
+              <input class="check-input"
+                type="checkbox" >
+               <span class="checkbox-icon"></span>
+              <span class="span-agreement-text"
                 >Соглашаюсь с рассылкой и принимаю<span>
-                  <a class="terms-agreement" href="">Условия договора</a></span
-                >
-              </span>
-            </label>
+                  <a class="terms-agreement" href="">Условия договора</a></span>
+           </label>
             <button class="btn-modal" type="submit">Отправить</button>
           </form>
         </div>
@@ -226,7 +226,6 @@
         </div>
       </section>
       <!-- Секція Team -->
-
       <section class="team-section section">
         <div class="container">
           <h2 class="section-tittle tittle-big">Наша команда</h2>
