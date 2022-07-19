@@ -133,9 +133,10 @@ img {
 .position-icon:hover .form-stroke {
   border-color: var(--color-overlay);
 }
-.position-icon:focus-within .form-stroke-comment,
-.position-icon:hover .form-stroke-comment {
-  border-color: var(--color-overlay);
+/* ховер, фокус на іконки */
+.position-icon:focus-within .icon-inputs,
+.position-icon:hover .icon-inputs {
+  fill: var(--color-overlay);
 }
 .icon-inputs {
   position: absolute;
@@ -147,11 +148,6 @@ img {
 .position-icon {
   position: relative;
 }
-/* ховер, фокус на іконки */
-.position-icon:focus .icon-inputs,
-.position-icon:hover .icon-inputs {
-  fill: var(--color-overlay);
-}
 .form-stroke {
   width: 448px;
   height: 40px;
@@ -160,7 +156,9 @@ img {
   padding: 12px 16px;
   padding-left: 42px;
   margin-bottom: 10px;
+  outline: transparent;
   transition: border-color var(--anim);
+
 }
 .form-stroke-comment {
   width: 448px;
@@ -173,7 +171,13 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
   margin-bottom: 20px;
+  outline: transparent;
   transition: border-color var(--anim);
+}
+/* ховер, фокус на input коментар */
+.position-icon:focus-within .form-stroke-comment,
+.position-icon:hover .form-stroke-comment {
+  border-color: var(--color-overlay);
 }
 /* Agreement */
 .terms-agreement {
@@ -218,7 +222,6 @@ img {
   justify-content: center;
 }
 .checkbox-icon {
-  align-items: center;
   left: 54px;
   border: 1px solid var(--black-cl);
   width: 16px;
